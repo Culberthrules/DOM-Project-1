@@ -1,0 +1,145 @@
+/* .navbar-brand {
+  color: green !important;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+i {
+  font-size: 35px;
+  cursor: pointer;
+  margin: 0 10px;
+  color: black;
+}
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.shopping-card-container {
+  width: 100%;
+  background-color: #f6f7fb;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 6px 18px rgba(20, 30, 60, 0.06);
+}
+
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.total-price span {
+  font-size: 20px;
+  color: #333;
+}
+
+.total {
+  font-weight: 700;
+  font-size: 22px;
+  color: #0d6efd;
+}
+
+.list-products {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  flex: 0 0 260px;
+}
+
+.card {
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card img {
+  height: 180px;
+  object-fit: contain;
+  background-color: #fff;
+  padding: 16px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  padding: 16px;
+}
+
+.unit-price {
+  color: #212529;
+  font-weight: 700;
+}
+
+.quantity {
+  font-size: 18px;
+  min-width: 30px;
+  text-align: center;
+}
+
+.card-body > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.fa-trash-alt {
+  color: #de6b5c;
+}
+
+/* accessible icon-like buttons */
+.icon-btn {
+  background: transparent;
+  border: none;
+  padding: 6px;
+  margin: 0 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn i {
+  font-size: 26px;
+  color: #222;
+}
+
+.icon-btn:focus {
+  outline: 2px solid rgba(13, 110, 253, 0.25);
+  border-radius: 6px;
+}
+
+.icon-btn[aria-label="like"] .fa-heart.text-danger,
+.icon-btn[aria-pressed="true"] .fa-heart.text-danger,
+.fa-heart.text-danger {
+  color: #dc3545;
+}
+
+@media (max-width: 640px) {
+  .product-card {
+    flex: 1 1 100%;
+    max-width: 420px;
+  }
+  .card img {
+    height: 160px;
+  }
+}
